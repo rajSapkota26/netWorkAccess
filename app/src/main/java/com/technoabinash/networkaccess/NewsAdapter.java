@@ -13,12 +13,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
-    ArrayList<NewsHeadlineModel> headlineModels;
+   List<NewsHeadlineModel> headlineModels;
     Context context;
 
-    public NewsAdapter(ArrayList<NewsHeadlineModel> headlineModels, Context context) {
+    public NewsAdapter(List<NewsHeadlineModel> headlineModels, Context context) {
         this.headlineModels = headlineModels;
         this.context = context;
     }
